@@ -1,0 +1,144 @@
+.movie-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    
+  }
+  .wrapper{
+    overflow: hidden;
+    background-color: #c6de0a;
+    max-width: 25%;
+    border-radius: 10%;
+  }
+  
+  .movie-details__poster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    transition: all 0.8s ease-in-out ;
+  }
+  .movie-details__poster:hover {
+    transform: scale(1.4);
+  }
+  
+  .movie-details__info {
+    max-width: 100%;
+    margin-left: 1rem;
+  }
+  
+  .movie-details__title {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #25c8c8;
+    text-decoration: solid;
+    font-weight: 900;
+  }
+  li{
+    color:rgb(219, 198, 198)
+  }
+  .movie-details__description {
+    font-size: 1.2rem;
+    color: #c6de0a;
+  }
+  
+  .movie-details__list {
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+  }
+  
+  .movie-details__list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie-details__list__label {
+    font-weight: bold;
+  }
+
+  strong{
+   font-size: x-large;
+   color:beige
+  }
+
+  .movie-details__list__rating {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+
+  }
+  
+  .movie-details__list__rating__stars {
+    display: flex;
+  }
+  
+  .movie-details__list__rating__star {
+    margin-right: 0.5rem;
+    color: #ffc107;
+    font-size: 1.5rem;
+  }
+  
+  .movie-details__list__rating__value {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .movie-details__list__item--producer,
+  .movie-details__list__item--cast {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .movie-details__list__item--producer .tag,
+  .movie-details__list__item--cast .tag {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #f2f2f2;
+    border-radius: 0.25rem;
+    color: #666;
+    font-size: 1.2rem;
+  }
+  
+  .movie-details__list__item--release-date {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .movie-details__list__item--runtime {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #wrapper{
+    overflow: hidden;
+    max-width: 40%;
+  }
+
+
+
+
+
+
+  
+  @media screen and (max-width: 768px) {
+    .movie-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .movie-details__poster {
+      max-width: 80%;
+      margin-bottom: 1rem;
+    }
+  
+    .movie-details__info {
+      max-width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
